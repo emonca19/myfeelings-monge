@@ -161,10 +161,10 @@ class MainActivity : AppCompatActivity() {
 
         lista.clear()
         lista.add(Emociones("Muy feliz", pVH, R.color.mustard, veryHappy))
-        lista.add(Emociones("Feliz", pVH, R.color.orange, happy))
-        lista.add(Emociones("Neutral", pVH, R.color.greenie, neutral))
-        lista.add(Emociones("Triste", pVH, R.color.blue, sad))
-        lista.add(Emociones("Muy feliz", pVH, R.color.deepBlue, verysad))
+        lista.add(Emociones("Feliz", pH, R.color.orange, happy))
+        lista.add(Emociones("Neutral", pN, R.color.greenie, neutral))
+        lista.add(Emociones("Triste", pS, R.color.blue, sad))
+        lista.add(Emociones("Muy feliz", pVS, R.color.deepBlue, verysad))
 
         val fondo = CustomCircleDrawable(this, lista)
 
@@ -176,10 +176,10 @@ class MainActivity : AppCompatActivity() {
         val graphVerySad = findViewById<View>(R.id.graphVerySad)
 
         graphVeryHappy.background = CustomBarDrawable(this, Emociones("Muy feliz", pVH, R.color.mustard, veryHappy))
-        graphHappy.background = CustomBarDrawable(this,Emociones("Feliz", pVH, R.color.orange, happy))
-        graphNeutral.background = CustomBarDrawable(this, Emociones("Neutral", pVH, R.color.greenie, neutral))
-        graphSad.background = CustomBarDrawable(this, Emociones("Triste", pVH, R.color.blue, sad))
-        graphVerySad.background = CustomBarDrawable(this, Emociones("Muy feliz", pVH, R.color.deepBlue, verysad))
+        graphHappy.background = CustomBarDrawable(this,Emociones("Feliz", pH, R.color.orange, happy))
+        graphNeutral.background = CustomBarDrawable(this, Emociones("Neutral", pN, R.color.greenie, neutral))
+        graphSad.background = CustomBarDrawable(this, Emociones("Triste", pS, R.color.blue, sad))
+        graphVerySad.background = CustomBarDrawable(this, Emociones("Muy feliz", pVS, R.color.deepBlue, verysad))
 
         graph.background = fondo
 

@@ -35,7 +35,7 @@ class CustomBarDrawable: Drawable {
         canvas.drawRect(coordenadas, fondo)
 
         if (emocion != null) { // No es necesario 'this.'
-            val porcentaje: Float = (emocion!!.porcentaje * (canvas.width - 10) / 100).toFloat()
+            val porcentaje: Float = emocion!!.porcentaje * (canvas.width - 10) / 100
             val coordenadas2 = RectF(0.0F, 0.0F, porcentaje, alto)
 
             val seccion = Paint().apply {
